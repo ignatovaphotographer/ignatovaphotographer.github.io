@@ -1,10 +1,9 @@
 {
-    "name": "Павел Лисиченко — Фотограф",
-    "short_name": "ПЛ Фото",
-    "description": "Портфолио фотографа — портреты, стрит, природа, события",
+    "name": "PH_IGNATOVA — Фэшн-фотограф",
+    "short_name": "PH_IGNATOVA",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#0e0e0e",
-    "theme_color": "#c8a97e",
-    "icons": []
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "lang": "ru"
 }
