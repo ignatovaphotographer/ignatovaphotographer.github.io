@@ -2,188 +2,228 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
-    <!-- ===== SEO: Основные мета-теги ===== -->
-    <title>Павел Лисиченко — Фотограф | Портфолио</title>
-    <meta name="description" content="Портфолио фотографа Павла Лисиченко. Портреты, стрит, природа, репортажи. Запись на съёмку.">
-    <meta name="keywords" content="фотограф, портфолио, портреты, фотосессия, съёмка, Павел Лисиченко">
-    <meta name="author" content="Павел Лисиченко">
-
-    <!-- ===== SEO: Canonical URL ===== -->
+    <!-- SEO -->
+    <title>PH_IGNATOVA — Фэшн-фотограф</title>
+    <meta name="description" content="PH_IGNATOVA — фэшн-фотограф для брендов, блогеров и людей. Портреты, лукбуки, кампейны, бьюти. Запись на съёмку.">
+    <meta name="keywords" content="фэшн фотограф, fashion photographer, портреты, лукбук, кампейн, бьюти, PH_IGNATOVA">
+    <meta name="author" content="PH_IGNATOVA">
     <link rel="canonical" href="https://ignatovaphotographer.github.io/">
 
-    <!-- ===== SEO: Open Graph (VK, Telegram, Facebook) ===== -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Павел Лисиченко — Фотограф">
-    <meta property="og:description" content="Портфолио фотографа. Портреты, стрит, природа, репортажи. Запись на съёмку.">
+    <meta property="og:title" content="PH_IGNATOVA — Фэшн-фотограф">
+    <meta property="og:description" content="Фэшн-фотограф для брендов, блогеров и людей. Запись на съёмку.">
     <meta property="og:url" content="https://ignatovaphotographer.github.io/">
-    <!-- Добавь своё фото-превью (1200x630px) и раскомментируй: -->
-    <!-- <meta property="og:image" content="https://ignatovaphotographer.github.io/og-image.jpg"> -->
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:site_name" content="Павел Лисиченко — Фотограф">
+    <meta property="og:site_name" content="PH_IGNATOVA">
+    <!-- <meta property="og:image" content="https://ignatovaphotographer.github.io/og-image.jpg"> -->
 
-    <!-- ===== SEO: Twitter Card ===== -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Павел Лисиченко — Фотограф">
-    <meta name="twitter:description" content="Портфолио фотографа. Портреты, стрит, природа, репортажи.">
-    <!-- <meta name="twitter:image" content="https://ignatovaphotographer.github.io/og-image.jpg"> -->
+    <meta name="twitter:title" content="PH_IGNATOVA — Фэшн-фотограф">
+    <meta name="twitter:description" content="Фэшн-фотограф для брендов, блогеров и людей.">
 
-    <!-- ===== PWA / Мобильное ===== -->
-    <meta name="theme-color" content="#c8a97e">
+    <!-- PWA -->
+    <meta name="theme-color" content="#ffffff">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="manifest" href="manifest.json">
 
-    <!-- ===== Стили ===== -->
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
 
-    <!-- ===== SEO: JSON-LD Structured Data (Google) ===== -->
+    <!-- JSON-LD -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        "name": "Павел Лисиченко — Фотограф",
-        "description": "Профессиональная фотосъёмка: портреты, репортажи, стрит, природа",
+        "name": "PH_IGNATOVA — Фэшн-фотограф",
+        "description": "Фэшн-фотограф для брендов, блогеров и людей. Портреты, лукбуки, кампейны, бьюти.",
         "url": "https://ignatovaphotographer.github.io/",
-        "priceRange": "$$",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "RU"
-        },
+        "address": { "@type": "PostalAddress", "addressCountry": "RU" },
         "sameAs": [
             "https://t.me/username",
-            "https://instagram.com/username",
-            "https://vk.com/username"
-        ],
-        "knowsAbout": ["Портретная фотосъёмка", "Стрит-фотография", "Пейзажная фотография", "Репортажная съёмка"]
+            "https://instagram.com/username"
+        ]
     }
     </script>
 </head>
 <body>
 
-    <!-- ===== Header / Navigation ===== -->
+    <!-- Header -->
     <header class="header">
-        <a href="#" class="logo">ПЛ</a>
-        <nav class="nav">
-            <a href="#portfolio" class="nav-link">Портфолио</a>
-            <a href="services.html" class="nav-link">Услуги</a>
-            <a href="#about" class="nav-link">Обо мне</a>
-            <a href="#contact" class="nav-link">Контакты</a>
-        </nav>
-        <button class="menu-btn" aria-label="Меню">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <div class="header-inner">
+            <a href="index.html" class="logo">ph_ignatova</a>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" onclick="return false;">Услуги</a>
+                    <div class="dropdown-menu">
+                        <a href="services-brands.html">Для брендов</a>
+                        <a href="services-personal.html">Личная съёмка</a>
+                    </div>
+                </div>
+                <a href="#portfolio" class="nav-link">Портфолио</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+            <button class="menu-btn" id="menuBtn" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-    <!-- ===== Hero Section ===== -->
-    <section class="hero">
-        <div class="hero-content">
-            <p class="hero-greeting">Привет, я</p>
-            <h1 class="hero-name">Павел Лисиченко</h1>
-            <p class="hero-tagline">Фотограф · Ловлю моменты, которые хочется пережить снова</p>
-            <a href="#portfolio" class="hero-btn">Смотреть работы ↓</a>
-        </div>
-    </section>
+    <!-- Photo Grid — Row 1: 3 photos -->
+    <main style="padding-top: 7rem;">
 
-    <!-- ===== Portfolio Gallery ===== -->
-    <section id="portfolio" class="portfolio">
-        <div class="section-header">
-            <h2>Портфолио</h2>
-            <p>Избранные работы</p>
-        </div>
-        <div class="filter-bar" id="filter-bar"></div>
-        <div class="gallery" id="gallery"></div>
-    </section>
-
-    <!-- ===== About Section ===== -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <div class="about-photo">
-                <div class="gallery-placeholder about-placeholder">
-                    <span class="placeholder-icon">🙂</span>
-                    <span class="placeholder-text">Моё фото</span>
-                    <span class="placeholder-hint">Замени на своё фото</span>
+        <div class="photo-grid" id="portfolio">
+            <!-- РЯДЫ ФОТОГРАФИЙ — замени src на свои ссылки с Wfolio -->
+            <div class="photo-row row-3">
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80" alt="Портрет 1" draggable="false">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80" alt="Портрет 2" draggable="false">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&q=80" alt="Портрет 3" draggable="false">
                 </div>
             </div>
+
+            <div class="photo-row row-2">
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=800&q=80" alt="Fashion 1" draggable="false">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="Fashion 2" draggable="false">
+                </div>
+            </div>
+
+            <div class="photo-row row-3">
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&q=80" alt="Портрет 4" draggable="false">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Портрет 5" draggable="false">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Портрет 6" draggable="false">
+                </div>
+            </div>
+
+            <div class="photo-row row-2">
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80" alt="Fashion 3" draggable="false">
+                </div>
+                <div class="photo-cell">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80" alt="Fashion 4" draggable="false">
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <h2 class="section-title">Обо мне</h2>
             <div class="about-text">
-                <h2>Обо мне</h2>
-                <p>
-                    Привет! Я Павел — фотограф из [твой город]. 
-                    Снимаю портреты, репортажи, стрит и природу.
-                </p>
-                <p>
-                    Верю, что хорошая фотография — это не просто красивая картинка, 
-                    а история, настроение и эмоция, пойманные в одном кадре.
-                </p>
-                <p>
-                    Открыт для сотрудничества — пишите!
-                </p>
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Фотосессий</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Года опыта</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Довольных клиентов</span>
+                <p class="about-name">Меня зовут Света</p>
+                <p class="about-role">фэшн-фотограф</p>
+
+                <p>Я фэшн-фотограф для брендов, блогеров и людей.</p>
+
+                <p>Работаю через призму своего авторского стиля: создаю визуал, который запоминается, и концепции, которые работают на построение визуальной коммуникации бренда с клиентом.</p>
+
+                <p>Мой стиль — это <strong>эмоциональный максимализм, замешанный на контрастах.</strong> Я работаю на стыке игривой дерзости и утонченности.</p>
+
+                <p>С одной стороны, мои кадры — <strong>цветные, сочные и яркие</strong>, они притягивают взгляд своей броской энергетикой. Это история про <strong>харизму, смелость и характер</strong> в кадре.</p>
+
+                <p>С другой стороны, мне важна <strong>фактура и «вкус»</strong> изображения: я стремлюсь к тому, чтобы картинка ощущалась <strong>объемной, пышной и даже «сладкой»</strong>, сохраняя при этом <strong>натуральность и чистоту</strong>.</p>
+
+                <p>Мой подход к форме — <strong>осознанный и строгий</strong>: я ценю детали, продуманную историю и сложную композицию, но при этом могу добавить нестандартный ракурс или ломаную позу.</p>
+
+                <p>Я создаю <strong>вневременные образы</strong>, которые сочетают <strong>характер, настроение, дерзость</strong>. Это фотография, которая ощущается эмоционально заряженной — от «безумной» радости до «злой» драмы.</p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq" id="faq">
+            <h2 class="section-title">Вопрос — ответ</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">Как создаётся образ на съёмку?</button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Сперва мы обсуждаем ваши пожелания и настроение съемки. Подбираем цвет, фактуру, фасон одежды. Здесь мне важно узнать, есть ли вещи, в которых вам психологически неудобно.
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- ===== Contact Section ===== -->
-    <section id="contact" class="contact">
-        <div class="section-header">
-            <h2>Связаться</h2>
-            <p>Хотите фотосессию? Напишите мне!</p>
-        </div>
-        <div class="contact-links">
-            <a href="https://t.me/username" class="contact-card" target="_blank" rel="noopener">
-                <span class="contact-icon">✈️</span>
-                <span class="contact-name">Telegram</span>
-                <span class="contact-value">@username</span>
-            </a>
-            <a href="mailto:your@email.com" class="contact-card">
-                <span class="contact-icon">✉️</span>
-                <span class="contact-name">Email</span>
-                <span class="contact-value">your@email.com</span>
-            </a>
-            <a href="https://instagram.com/username" class="contact-card" target="_blank" rel="noopener">
-                <span class="contact-icon">📷</span>
-                <span class="contact-name">Instagram</span>
-                <span class="contact-value">@username</span>
-            </a>
-            <a href="https://vk.com/username" class="contact-card" target="_blank" rel="noopener">
-                <span class="contact-icon">💬</span>
-                <span class="contact-name">ВКонтакте</span>
-                <span class="contact-value">vk.com/username</span>
-            </a>
-        </div>
-    </section>
+            <div class="faq-item">
+                <button class="faq-question">Образ клиент сам подбирает?</button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Я помогаю с идеей и визуальной концепцией съемки, создаю для вас подборку референсов. Предоставляю необходимые рекомендации по образу, а подбор конкретных вещей вы берете на себя.<br><br>
+                        Это позволит вам чувствовать себя в кадре максимально комфортно и естественно, ведь это будут вещи, которые вам точно нравятся.
+                    </div>
+                </div>
+            </div>
 
-    <!-- ===== Footer ===== -->
+            <div class="faq-item">
+                <button class="faq-question">Предоставляете ли образы для съемки?</button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        В случае, если у вас нет подходящей одежды, обуви, аксессуаров, я предлагаю несколько вариантов решения:<br><br>
+                        — Найти недостающие вещи в офлайн- и онлайн-магазинах и вернуть после съемки;<br>
+                        — Арендовать вещи в прокате;<br>
+                        — Нанять стилиста, кто соберет готовый образ (эта услуга оплачивается отдельно).<br><br>
+                        В любом из вариантов я попрошу вас прислать мне фото вещей на согласование.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Что делать если я не умею позировать?</button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Вы не обязаны уметь позировать, я буду направлять вас на протяжении всей съемки — говорить и показывать, как надо встать. До съемки я пришлю вам статью про базовые правила позирования. Прочитайте её, чтобы чувствовать себя увереннее на съемке.<br><br>
+                        Вы можете прислать мне фото, где вы себе нравитесь, так я пойму, какие ракурсы вам льстят.<br><br>
+                        <a href="https://telegra.ph/Pozirovanie-09-02" target="_blank" rel="noopener">Статья про позирование →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Как мы отбираем фотографии на обработку?</button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Я отправляю вам исходные фотографии в формате JPEG. В зависимости от выбранного пакета, мы делим общее количество кадров для обработки пополам:<br><br>
+                        — Вы отмечаете те фотографии, которые вам больше всего понравились;<br>
+                        — Как автор, я отбираю фотографии, которые, с моей профессиональной точки зрения, наиболее выигрышно смотрятся по композиции, эмоциям и свету.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-links">
+                <a href="https://t.me/username" class="contact-link" target="_blank" rel="noopener">Telegram</a>
+                <a href="https://instagram.com/username" class="contact-link" target="_blank" rel="noopener">Instagram</a>
+                <a href="mailto:your@email.com" class="contact-link">Email</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2026 Павел Лисиченко. Все права защищены.</p>
+        &copy; 2026 PH_IGNATOVA. Все права защищены.
     </footer>
 
-    <!-- ===== Lightbox ===== -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" aria-label="Закрыть">&times;</button>
-        <div class="lightbox-content">
-            <img src="" alt="" id="lightbox-img">
-        </div>
-    </div>
-
-    <script src="photos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
