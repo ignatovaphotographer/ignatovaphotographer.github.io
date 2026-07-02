@@ -1,81 +1,57 @@
-/* =============================================
-   PH_IGNATOVA — Site Scripts
-   ============================================= */
-
-// Header scroll effect
-const header = document.querySelector('.header');
-if (header) {
-    window.addEventListener('scroll', () => {
-        header.classList.toggle('scrolled', window.scrollY > 50);
-    });
-}
+/* PH_IGNATOVA scripts */
+const nav=document.getElementById('topnav');
+if(nav)window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50));
 
 // Mobile menu
-const menuBtn = document.getElementById('menuBtn');
-const nav = document.getElementById('nav');
-if (menuBtn && nav) {
-    menuBtn.addEventListener('click', () => {
-        menuBtn.classList.toggle('open');
-        nav.classList.toggle('open');
-        document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
-    });
-    nav.querySelectorAll('a[href]').forEach(link => {
-        link.addEventListener('click', () => {
-            if (link.getAttribute('onclick')) return;
-            menuBtn.classList.remove('open');
-            nav.classList.remove('open');
-            document.body.style.overflow = '';
-        });
-    });
+const btn=document.getElementById('menuBtn');
+const links=document.querySelector('.nav-links')||null;
+if(btn){
+  // Wrap nav links for mobile toggle
+  const navEl=document.getElementById('topnav');
+  const allLinks=[...navEl.querySelectorAll('a')];
+  if(!navEl.querySelector('.nav-links')){
+    const wrap=document.createElement('div');
+    wrap.className='nav-links';
+    allLinks.forEach(a=>wrap.appendChild(a));
+    navEl.insertBefore(wrap,btn);
+  }
+  const nl=navEl.querySelector('.nav-links');
+  btn.addEventListener('click',()=>{
+    btn.classList.toggle('open');
+    nl.classList.toggle('open');
+    document.body.style.overflow=nl.classList.contains('open')?'hidden':'';
+  });
+  nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    btn.classList.remove('open');nl.classList.remove('open');document.body.style.overflow='';
+  }));
 }
 
-// FAQ Accordion
-document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const isOpen = item.classList.contains('open');
-        // Close all
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        // Open clicked if was closed
-        if (!isOpen) item.classList.add('open');
-    });
+// FAQ
+document.querySelectorAll('.faq-question').forEach(b=>{
+  b.addEventListener('click',()=>{
+    const item=b.parentElement,open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!open)item.classList.add('open');
+  });
 });
 
-// Scroll reveal animation
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('.photo-row, .faq-item, .service-block, .about-text').forEach(el => {
-    el.classList.add('reveal');
-    revealObserver.observe(el);
+// Scroll reveal
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.photo-row,.package,.terms,.faq-item,.about,.about-full,.steps-section,.extras').forEach(el=>{
+  el.classList.add('reveal');obs.observe(el);
 });
 
-// Right-click protection on images
-document.addEventListener('contextmenu', (e) => {
-    if (e.target.tagName === 'IMG' || e.target.closest('.photo-cell')) {
-        e.preventDefault();
-    }
-});
+// Photo protection
+document.addEventListener('contextmenu',e=>{if(e.target.tagName==='IMG'||e.target.closest('.photo-cell')||e.target.closest('.package-photos'))e.preventDefault()});
+document.querySelectorAll('img').forEach(i=>i.addEventListener('dragstart',e=>e.preventDefault()));
 
-// Prevent drag on images
-document.querySelectorAll('img').forEach(img => {
-    img.addEventListener('dragstart', e => e.preventDefault());
-});
-
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-        const href = a.getAttribute('href');
-        if (href === '#') return;
-        const target = document.querySelector(href);
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    });
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const h=a.getAttribute('href');if(h==='#')return;
+    const t=document.querySelector(h);
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+  });
 });
