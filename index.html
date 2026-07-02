@@ -3,227 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-
-    <!-- SEO -->
     <title>PH_IGNATOVA — Фэшн-фотограф</title>
-    <meta name="description" content="PH_IGNATOVA — фэшн-фотограф для брендов, блогеров и людей. Портреты, лукбуки, кампейны, бьюти. Запись на съёмку.">
+    <meta name="description" content="PH_IGNATOVA — фэшн-фотограф для брендов, блогеров и людей. Портреты, лукбуки, кампейны, бьюти.">
     <meta name="keywords" content="фэшн фотограф, fashion photographer, портреты, лукбук, кампейн, бьюти, PH_IGNATOVA">
-    <meta name="author" content="PH_IGNATOVA">
     <link rel="canonical" href="https://ignatovaphotographer.github.io/">
-
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="PH_IGNATOVA — Фэшн-фотограф">
-    <meta property="og:description" content="Фэшн-фотограф для брендов, блогеров и людей. Запись на съёмку.">
+    <meta property="og:description" content="Фэшн-фотограф для брендов, блогеров и людей.">
     <meta property="og:url" content="https://ignatovaphotographer.github.io/">
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:site_name" content="PH_IGNATOVA">
-    <!-- <meta property="og:image" content="https://ignatovaphotographer.github.io/og-image.jpg"> -->
-
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PH_IGNATOVA — Фэшн-фотограф">
-    <meta name="twitter:description" content="Фэшн-фотограф для брендов, блогеров и людей.">
-
-    <!-- PWA -->
     <meta name="theme-color" content="#ffffff">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="manifest" href="manifest.json">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
-
-    <!-- JSON-LD -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "PH_IGNATOVA — Фэшн-фотограф",
-        "description": "Фэшн-фотограф для брендов, блогеров и людей. Портреты, лукбуки, кампейны, бьюти.",
-        "url": "https://ignatovaphotographer.github.io/",
-        "address": { "@type": "PostalAddress", "addressCountry": "RU" },
-        "sameAs": [
-            "https://t.me/username",
-            "https://instagram.com/username"
-        ]
-    }
+    {"@context":"https://schema.org","@type":"ProfessionalService","name":"PH_IGNATOVA","description":"Фэшн-фотограф для брендов, блогеров и людей.","url":"https://ignatovaphotographer.github.io/","address":{"@type":"PostalAddress","addressCountry":"RU"}}
     </script>
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header-inner">
-            <a href="index.html" class="logo">ph_ignatova</a>
-            <nav class="nav" id="nav">
-                <a href="index.html" class="nav-link active">Главная</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-link" onclick="return false;">Услуги</a>
-                    <div class="dropdown-menu">
-                        <a href="services-brands.html">Для брендов</a>
-                        <a href="services-personal.html">Личная съёмка</a>
-                    </div>
-                </div>
-                <a href="#portfolio" class="nav-link">Портфолио</a>
-                <a href="#contact" class="nav-link">Контакты</a>
-            </nav>
-            <button class="menu-btn" id="menuBtn" aria-label="Меню">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+<!-- NAV -->
+<nav class="topnav" id="topnav">
+    <a href="index.html" class="active">Обо мне</a>
+    <a href="#portfolio">Портфолио</a>
+    <a href="services-brands.html">Услуги (бренды)</a>
+    <a href="services-personal.html">Услуги (личные)</a>
+    <a href="#contact">Контакты</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Меню"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO — left: labels + name, right: large photo -->
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-labels">
+            PHOTOGRAPHY:<br>
+            ART DIRECTION<br>
+            INDIVIDUAL<br>
+            FOR BRANDS<br>
+            CONTENT
         </div>
-    </header>
+        <h1 class="hero-name">PH_IGNATOVA</h1>
+        <p class="hero-subtitle">фэшн-фотограф</p>
+    </div>
+    <img class="hero-photo" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80" alt="PH_IGNATOVA" draggable="false">
+</section>
 
-    <!-- Photo Grid — Row 1: 3 photos -->
-    <main style="padding-top: 7rem;">
-
-        <div class="photo-grid" id="portfolio">
-            <!-- РЯДЫ ФОТОГРАФИЙ — замени src на свои ссылки с Wfolio -->
-            <div class="photo-row row-3">
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80" alt="Портрет 1" draggable="false">
-                </div>
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80" alt="Портрет 2" draggable="false">
-                </div>
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&q=80" alt="Портрет 3" draggable="false">
-                </div>
-            </div>
-
-            <div class="photo-row row-2">
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=800&q=80" alt="Fashion 1" draggable="false">
-                </div>
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="Fashion 2" draggable="false">
-                </div>
-            </div>
-
-            <div class="photo-row row-3">
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&q=80" alt="Портрет 4" draggable="false">
-                </div>
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Портрет 5" draggable="false">
-                </div>
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Портрет 6" draggable="false">
-                </div>
-            </div>
-
-            <div class="photo-row row-2">
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80" alt="Fashion 3" draggable="false">
-                </div>
-                <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80" alt="Fashion 4" draggable="false">
-                </div>
-            </div>
+<!-- ABOUT — 2 photos left, text right -->
+<section class="about" id="about">
+    <div class="about-photos">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80" alt="Портрет" draggable="false">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&q=80" alt="Портрет" draggable="false">
+    </div>
+    <div class="about-right">
+        <div class="about-header">
+            <h2>About me<br>(обо мне)</h2>
+            <h2>Fashion<br>photographer</h2>
         </div>
+        <div class="about-text">
+            <p><strong>Меня зовут Света</strong> — я фэшн-фотограф для брендов, блогеров и людей.</p>
+            <p><strong>Работаю через призму своего авторского стиля:</strong> создаю визуал, который запоминается, и концепции, которые работают на построение визуальной коммуникации бренда с клиентом.</p>
+        </div>
+    </div>
+</section>
 
-        <!-- About -->
-        <section class="section" id="about">
-            <h2 class="section-title">Обо мне</h2>
-            <div class="about-text">
-                <p class="about-name">Меня зовут Света</p>
-                <p class="about-role">фэшн-фотограф</p>
+<div class="about-full">
+    <p>Мой стиль — это <strong>эмоциональный максимализм, замешанный на контрастах.</strong> Я работаю на стыке игривой дерзости и утонченности.</p>
+    <p>С одной стороны, мои кадры — <strong>цветные, сочные и яркие</strong>, они притягивают взгляд своей броской энергетикой. Это история про <strong>харизму, смелость и характер</strong> в кадре.</p>
+    <p>С другой стороны, мне важна <strong>фактура и «вкус»</strong> изображения: я стремлюсь к тому, чтобы картинка ощущалась <strong>объемной, пышной и даже «сладкой»</strong>, сохраняя при этом <strong>натуральность и чистоту</strong>.</p>
+    <p>Мой подход к форме — <strong>осознанный и строгий</strong>: я ценю детали, продуманную историю и сложную композицию, но при этом могу добавить нестандартный ракурс или ломаную позу.</p>
+    <p>Я создаю <strong>вневременные образы</strong>, которые сочетают <strong>характер, настроение, дерзость</strong>. Это фотография, которая ощущается эмоционально заряженной — от «безумной» радости до «злой» драмы.</p>
+</div>
 
-                <p>Я фэшн-фотограф для брендов, блогеров и людей.</p>
+<!-- PORTFOLIO -->
+<div class="portfolio-header" id="portfolio">
+    <h2>Портфолио</h2>
+    <div class="portfolio-labels">
+        PHOTOGRAPHY:<br>
+        ART DIRECTION<br>
+        INDIVIDUAL<br>
+        FOR BRANDS<br>
+        CONTENT
+    </div>
+</div>
 
-                <p>Работаю через призму своего авторского стиля: создаю визуал, который запоминается, и концепции, которые работают на построение визуальной коммуникации бренда с клиентом.</p>
+<div class="photo-grid">
+    <div class="photo-row row-2-equal">
+        <div class="photo-cell"><img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=800&q=80" alt="Fashion 1" draggable="false"></div>
+        <div class="photo-cell"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80" alt="Fashion 2" draggable="false"></div>
+    </div>
+    <div class="photo-row row-3">
+        <div class="photo-cell"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&q=80" alt="Портрет 1" draggable="false"></div>
+        <div class="photo-cell"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Портрет 2" draggable="false"></div>
+        <div class="photo-cell"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Портрет 3" draggable="false"></div>
+    </div>
+    <div class="photo-row row-2-equal">
+        <div class="photo-cell"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80" alt="Fashion 3" draggable="false"></div>
+        <div class="photo-cell"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80" alt="Fashion 4" draggable="false"></div>
+    </div>
+</div>
 
-                <p>Мой стиль — это <strong>эмоциональный максимализм, замешанный на контрастах.</strong> Я работаю на стыке игривой дерзости и утонченности.</p>
+<!-- FAQ -->
+<section class="faq" id="faq">
+    <h2>Вопрос — ответ</h2>
 
-                <p>С одной стороны, мои кадры — <strong>цветные, сочные и яркие</strong>, они притягивают взгляд своей броской энергетикой. Это история про <strong>харизму, смелость и характер</strong> в кадре.</p>
+    <div class="faq-item">
+        <button class="faq-question">Как создаётся образ на съёмку?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Сперва мы обсуждаем ваши пожелания и настроение съемки. Подбираем цвет, фактуру, фасон одежды. Здесь мне важно узнать, есть ли вещи, в которых вам психологически неудобно.</div></div>
+    </div>
 
-                <p>С другой стороны, мне важна <strong>фактура и «вкус»</strong> изображения: я стремлюсь к тому, чтобы картинка ощущалась <strong>объемной, пышной и даже «сладкой»</strong>, сохраняя при этом <strong>натуральность и чистоту</strong>.</p>
+    <div class="faq-item">
+        <button class="faq-question">Образ клиент сам подбирает?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Я помогаю с идеей и визуальной концепцией съемки, создаю для вас подборку референсов. Предоставляю необходимые рекомендации по образу, а подбор конкретных вещей вы берете на себя.<br><br>Это позволит вам чувствовать себя в кадре максимально комфортно и естественно, ведь это будут вещи, которые вам точно нравятся.</div></div>
+    </div>
 
-                <p>Мой подход к форме — <strong>осознанный и строгий</strong>: я ценю детали, продуманную историю и сложную композицию, но при этом могу добавить нестандартный ракурс или ломаную позу.</p>
+    <div class="faq-item">
+        <button class="faq-question">Предоставляете ли образы для съемки?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">В случае, если у вас нет подходящей одежды, обуви, аксессуаров, я предлагаю несколько вариантов решения:<br><br>— Найти недостающие вещи в офлайн- и онлайн-магазинах и вернуть после съемки;<br>— Арендовать вещи в прокате;<br>— Нанять стилиста, кто соберет готовый образ (эта услуга оплачивается отдельно).<br><br>В любом из вариантов я попрошу вас прислать мне фото вещей на согласование.</div></div>
+    </div>
 
-                <p>Я создаю <strong>вневременные образы</strong>, которые сочетают <strong>характер, настроение, дерзость</strong>. Это фотография, которая ощущается эмоционально заряженной — от «безумной» радости до «злой» драмы.</p>
-            </div>
-        </section>
+    <div class="faq-item">
+        <button class="faq-question">Что делать если я не умею позировать?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Вы не обязаны уметь позировать, я буду направлять вас на протяжении всей съемки — говорить и показывать, как надо встать. До съемки я пришлю вам статью про базовые правила позирования. Прочитайте её, чтобы чувствовать себя увереннее на съемке.<br><br>Вы можете прислать мне фото, где вы себе нравитесь, так я пойму, какие ракурсы вам льстят.<br><br><a href="https://telegra.ph/Pozirovanie-09-02" target="_blank" rel="noopener">Статья про позирование →</a></div></div>
+    </div>
 
-        <!-- FAQ -->
-        <section class="faq" id="faq">
-            <h2 class="section-title">Вопрос — ответ</h2>
+    <div class="faq-item">
+        <button class="faq-question">Как мы отбираем фотографии на обработку?</button>
+        <div class="faq-answer"><div class="faq-answer-inner">Я отправляю вам исходные фотографии в формате JPEG. В зависимости от выбранного пакета, мы делим общее количество кадров для обработки пополам:<br><br>— Вы отмечаете те фотографии, которые вам больше всего понравились;<br>— Как автор, я отбираю фотографии, которые, с моей профессиональной точки зрения, наиболее выигрышно смотрятся по композиции, эмоциям и свету.</div></div>
+    </div>
+</section>
 
-            <div class="faq-item">
-                <button class="faq-question">Как создаётся образ на съёмку?</button>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        Сперва мы обсуждаем ваши пожелания и настроение съемки. Подбираем цвет, фактуру, фасон одежды. Здесь мне важно узнать, есть ли вещи, в которых вам психологически неудобно.
-                    </div>
-                </div>
-            </div>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Контакты</h2>
+    <div class="contact-links">
+        <a href="https://t.me/username" class="contact-link" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://instagram.com/username" class="contact-link" target="_blank" rel="noopener">Instagram</a>
+        <a href="mailto:your@email.com" class="contact-link">Email</a>
+    </div>
+</section>
 
-            <div class="faq-item">
-                <button class="faq-question">Образ клиент сам подбирает?</button>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        Я помогаю с идеей и визуальной концепцией съемки, создаю для вас подборку референсов. Предоставляю необходимые рекомендации по образу, а подбор конкретных вещей вы берете на себя.<br><br>
-                        Это позволит вам чувствовать себя в кадре максимально комфортно и естественно, ведь это будут вещи, которые вам точно нравятся.
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Предоставляете ли образы для съемки?</button>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        В случае, если у вас нет подходящей одежды, обуви, аксессуаров, я предлагаю несколько вариантов решения:<br><br>
-                        — Найти недостающие вещи в офлайн- и онлайн-магазинах и вернуть после съемки;<br>
-                        — Арендовать вещи в прокате;<br>
-                        — Нанять стилиста, кто соберет готовый образ (эта услуга оплачивается отдельно).<br><br>
-                        В любом из вариантов я попрошу вас прислать мне фото вещей на согласование.
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Что делать если я не умею позировать?</button>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        Вы не обязаны уметь позировать, я буду направлять вас на протяжении всей съемки — говорить и показывать, как надо встать. До съемки я пришлю вам статью про базовые правила позирования. Прочитайте её, чтобы чувствовать себя увереннее на съемке.<br><br>
-                        Вы можете прислать мне фото, где вы себе нравитесь, так я пойму, какие ракурсы вам льстят.<br><br>
-                        <a href="https://telegra.ph/Pozirovanie-09-02" target="_blank" rel="noopener">Статья про позирование →</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Как мы отбираем фотографии на обработку?</button>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">
-                        Я отправляю вам исходные фотографии в формате JPEG. В зависимости от выбранного пакета, мы делим общее количество кадров для обработки пополам:<br><br>
-                        — Вы отмечаете те фотографии, которые вам больше всего понравились;<br>
-                        — Как автор, я отбираю фотографии, которые, с моей профессиональной точки зрения, наиболее выигрышно смотрятся по композиции, эмоциям и свету.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section class="contact-section" id="contact">
-            <h2 class="section-title">Контакты</h2>
-            <div class="contact-links">
-                <a href="https://t.me/username" class="contact-link" target="_blank" rel="noopener">Telegram</a>
-                <a href="https://instagram.com/username" class="contact-link" target="_blank" rel="noopener">Instagram</a>
-                <a href="mailto:your@email.com" class="contact-link">Email</a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        &copy; 2026 PH_IGNATOVA. Все права защищены.
-    </footer>
-
-    <script src="script.js"></script>
+<footer class="footer">&copy; 2026 PH_IGNATOVA. Все права защищены.</footer>
+<script src="script.js"></script>
 </body>
 </html>
