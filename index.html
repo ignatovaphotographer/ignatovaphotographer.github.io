@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO: Основные мета-теги ===== -->
+    <title>Павел Лисиченко — Фотограф | Портфолио</title>
+    <meta name="description" content="Портфолио фотографа Павла Лисиченко. Портреты, стрит, природа, репортажи. Запись на съёмку.">
+    <meta name="keywords" content="фотограф, портфолио, портреты, фотосессия, съёмка, Павел Лисиченко">
+    <meta name="author" content="Павел Лисиченко">
+
+    <!-- ===== SEO: Canonical URL ===== -->
+    <link rel="canonical" href="https://ignatovaphotographer.github.io/">
+
+    <!-- ===== SEO: Open Graph (VK, Telegram, Facebook) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Павел Лисиченко — Фотограф">
+    <meta property="og:description" content="Портфолио фотографа. Портреты, стрит, природа, репортажи. Запись на съёмку.">
+    <meta property="og:url" content="https://ignatovaphotographer.github.io/">
+    <!-- Добавь своё фото-превью (1200x630px) и раскомментируй: -->
+    <!-- <meta property="og:image" content="https://ignatovaphotographer.github.io/og-image.jpg"> -->
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Павел Лисиченко — Фотограф">
+
+    <!-- ===== SEO: Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Павел Лисиченко — Фотограф">
+    <meta name="twitter:description" content="Портфолио фотографа. Портреты, стрит, природа, репортажи.">
+    <!-- <meta name="twitter:image" content="https://ignatovaphotographer.github.io/og-image.jpg"> -->
+
+    <!-- ===== PWA / Мобильное ===== -->
+    <meta name="theme-color" content="#c8a97e">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- ===== Стили ===== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
+
+    <!-- ===== SEO: JSON-LD Structured Data (Google) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Павел Лисиченко — Фотограф",
+        "description": "Профессиональная фотосъёмка: портреты, репортажи, стрит, природа",
+        "url": "https://ignatovaphotographer.github.io/",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "RU"
+        },
+        "sameAs": [
+            "https://t.me/username",
+            "https://instagram.com/username",
+            "https://vk.com/username"
+        ],
+        "knowsAbout": ["Портретная фотосъёмка", "Стрит-фотография", "Пейзажная фотография", "Репортажная съёмка"]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ===== Header / Navigation ===== -->
+    <header class="header">
+        <a href="#" class="logo">ПЛ</a>
+        <nav class="nav">
+            <a href="#portfolio" class="nav-link">Портфолио</a>
+            <a href="services.html" class="nav-link">Услуги</a>
+            <a href="#about" class="nav-link">Обо мне</a>
+            <a href="#contact" class="nav-link">Контакты</a>
+        </nav>
+        <button class="menu-btn" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Привет, я</p>
+            <h1 class="hero-name">Павел Лисиченко</h1>
+            <p class="hero-tagline">Фотограф · Ловлю моменты, которые хочется пережить снова</p>
+            <a href="#portfolio" class="hero-btn">Смотреть работы ↓</a>
+        </div>
+    </section>
+
+    <!-- ===== Portfolio Gallery ===== -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-header">
+            <h2>Портфолио</h2>
+            <p>Избранные работы</p>
+        </div>
+        <div class="filter-bar" id="filter-bar"></div>
+        <div class="gallery" id="gallery"></div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-photo">
+                <div class="gallery-placeholder about-placeholder">
+                    <span class="placeholder-icon">🙂</span>
+                    <span class="placeholder-text">Моё фото</span>
+                    <span class="placeholder-hint">Замени на своё фото</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>Обо мне</h2>
+                <p>
+                    Привет! Я Павел — фотограф из [твой город]. 
+                    Снимаю портреты, репортажи, стрит и природу.
+                </p>
+                <p>
+                    Верю, что хорошая фотография — это не просто красивая картинка, 
+                    а история, настроение и эмоция, пойманные в одном кадре.
+                </p>
+                <p>
+                    Открыт для сотрудничества — пишите!
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Фотосессий</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Года опыта</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Довольных клиентов</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Связаться</h2>
+            <p>Хотите фотосессию? Напишите мне!</p>
+        </div>
+        <div class="contact-links">
+            <a href="https://t.me/username" class="contact-card" target="_blank" rel="noopener">
+                <span class="contact-icon">✈️</span>
+                <span class="contact-name">Telegram</span>
+                <span class="contact-value">@username</span>
+            </a>
+            <a href="mailto:your@email.com" class="contact-card">
+                <span class="contact-icon">✉️</span>
+                <span class="contact-name">Email</span>
+                <span class="contact-value">your@email.com</span>
+            </a>
+            <a href="https://instagram.com/username" class="contact-card" target="_blank" rel="noopener">
+                <span class="contact-icon">📷</span>
+                <span class="contact-name">Instagram</span>
+                <span class="contact-value">@username</span>
+            </a>
+            <a href="https://vk.com/username" class="contact-card" target="_blank" rel="noopener">
+                <span class="contact-icon">💬</span>
+                <span class="contact-name">ВКонтакте</span>
+                <span class="contact-value">vk.com/username</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <p>&copy; 2026 Павел Лисиченко. Все права защищены.</p>
+    </footer>
+
+    <!-- ===== Lightbox ===== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Закрыть">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+        </div>
+    </div>
+
+    <script src="photos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

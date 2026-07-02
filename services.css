@@ -1,0 +1,301 @@
+/* =============================================
+   SERVICES PAGE — Стили страницы услуг
+   Использует переменные из style.css
+   ============================================= */
+
+/* ===== Page Hero (компактный заголовок) ===== */
+.page-hero {
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+}
+.page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(200, 169, 126, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+.page-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    animation: fadeUp 0.8s ease forwards;
+}
+.page-hero p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeUp 0.8s ease 0.15s forwards;
+    opacity: 0;
+}
+
+/* ===== Services Grid ===== */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+/* ===== Service Card ===== */
+.service-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all var(--transition);
+}
+.service-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+
+/* Featured card */
+.service-card.featured {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, var(--surface) 0%, rgba(200, 169, 126, 0.08) 100%);
+}
+.service-badge {
+    position: absolute;
+    top: -0.75rem;
+    right: 1.5rem;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.9rem;
+    border-radius: 999px;
+    letter-spacing: 0.03em;
+}
+
+.service-icon {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+.service-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+/* What's included */
+.service-includes {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+.service-includes li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.service-includes li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* Price */
+.service-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+}
+
+/* CTA Button */
+.service-btn {
+    display: inline-block;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    transition: all var(--transition);
+    cursor: pointer;
+    text-decoration: none;
+}
+.service-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+/* ===== How It Works ===== */
+.how-it-works {
+    padding: 5rem 2rem;
+    background: var(--bg-light);
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.step {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.step-number {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: var(--accent);
+    opacity: 0.6;
+    margin-bottom: 0.75rem;
+    line-height: 1;
+}
+
+.step h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.03em;
+}
+
+.step p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* ===== FAQ ===== */
+.faq {
+    padding: 5rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.faq-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: border-color var(--transition);
+}
+.faq-item[open] {
+    border-color: var(--accent);
+}
+
+.faq-item summary {
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color var(--transition);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+    content: '+';
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--accent);
+    transition: transform var(--transition);
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+}
+.faq-item summary:hover { color: var(--accent); }
+
+.faq-item p {
+    padding: 0 1.5rem 1.25rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* ===== CTA Section ===== */
+.cta {
+    text-align: center;
+    padding: 5rem 2rem;
+    position: relative;
+}
+.cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(200, 169, 126, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+}
+.cta h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+.cta p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    position: relative;
+}
+.cta .hero-btn {
+    position: relative;
+}
+
+/* Active nav link */
+.nav-link.active {
+    color: var(--accent);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr;
+        padding: 0 1.25rem 3rem;
+    }
+    .steps {
+        grid-template-columns: 1fr 1fr;
+    }
+    .page-hero {
+        padding: 7rem 1.5rem 3rem;
+    }
+}
+@media (max-width: 480px) {
+    .steps {
+        grid-template-columns: 1fr;
+    }
+    .service-card {
+        padding: 1.5rem;
+    }
+}
