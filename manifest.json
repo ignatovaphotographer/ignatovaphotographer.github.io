@@ -1,9 +1,1 @@
-{
-    "name": "PH_IGNATOVA — Фэшн-фотограф",
-    "short_name": "PH_IGNATOVA",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
-    "lang": "ru"
-}
+{"name":"PH_IGNATOVA — Фэшн-фотограф","short_name":"PH_IGNATOVA","start_url":"/","display":"standalone","background_color":"#ffffff","theme_color":"#ffffff","lang":"ru"}
